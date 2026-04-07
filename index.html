@@ -981,6 +981,73 @@ a {
   animation: fadeInUp 0.6s ease forwards;
 }
 
+/* お役立ち記事カード */
+.article-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.article-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+  text-decoration: none;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.article-card-tag {
+  display: inline-block;
+  background: rgba(230, 126, 34, 0.1);
+  color: var(--orange-dark);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.article-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.article-card p {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.article-card-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+@media (min-width: 600px) {
+  .article-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .article-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* 更新日バッジ */
 .update-badge {
   display: inline-flex;
@@ -1580,7 +1647,39 @@ a {
   </div>
 </section>
 
+<!-- お役立ち記事 -->
+<section class="section" id="articles">
+  <div class="container">
+    <div class="section-header">
+      <h2>お役立ち記事</h2>
+      <p>訳あり不動産の売却に役立つ情報をお届けします</p>
+      <div class="section-line"></div>
+    </div>
 
+    <div class="article-cards">
+      <a href="/wakeari-urenai.html" class="article-card">
+        <span class="article-card-tag">売却のお悩み</span>
+        <h3>訳あり不動産が売れない理由と解決策</h3>
+        <p>売れない5つの理由と具体的な解決策を徹底解説。買取業者に依頼するメリットもご紹介します。</p>
+        <span class="article-card-link">記事を読む ▶</span>
+      </a>
+
+      <a href="/kyoyu-mochibun-baikyaku.html" class="article-card">
+        <span class="article-card-tag">共有持分</span>
+        <h3>共有持分の売却方法を徹底解説</h3>
+        <p>共有持分とは何か、3つの売却方法、買取業者のメリット、注意点まで詳しく解説します。</p>
+        <span class="article-card-link">記事を読む ▶</span>
+      </a>
+
+      <a href="/jiko-bukken-souba.html" class="article-card">
+        <span class="article-card-tag">事故物件</span>
+        <h3>事故物件の買取相場と高く売るコツ</h3>
+        <p>事故物件の種類別相場と高く売るための5つのコツ、おすすめ業者の選び方をご紹介。</p>
+        <span class="article-card-link">記事を読む ▶</span>
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- フッター -->
 <footer class="site-footer">
