@@ -1,0 +1,20 @@
+# --- .html 付き旧URL → クリーンURL（307→301に固定 / SEO評価伝播のため）---
+/about.html                       /about                       301
+/index.html                       /                            301
+
+/wakeari-urenai.html              /wakeari-urenai              301
+/kyoyu-mochibun-baikyaku.html     /kyoyu-mochibun-baikyaku     301
+/jiko-bukken-souba.html           /jiko-bukken-souba           301
+/saiken-fuka-baikyaku.html        /saiken-fuka-baikyaku        301
+/akiya-shobun-hiyou.html          /akiya-shobun-hiyou          301
+/soko-chi-baikyaku.html           /soko-chi-baikyaku           301
+/souzoku-fudousan-urenai.html     /souzoku-fudousan-urenai     301
+/wakeari-kaitori-vs-chukai.html   /wakeari-kaitori-vs-chukai   301
+/roukyuuka-bukken-baikyaku.html   /roukyuuka-bukken-baikyaku   301
+/gomiyashiki-kaitori.html         /gomiyashiki-kaitori         301
+
+/review-wakegai.html              /review-wakegai              301
+/review-wakearibukken.html        /review-wakearibukken        301
+/review-jobutsu.html              /review-jobutsu              301
+/review-nr.html                   /review-nr                   301
+/review-rakuuru.html              /review-rakuuru              301
